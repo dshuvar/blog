@@ -79,17 +79,17 @@ analytics:
 author:
   name             : "Dmitry Shuvar"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "System Engineer, who loves databases"
+  bio              : "System Engineer"
   location         : "Saint-Petersburg"
   email            : "it.demi@ya.ru"
-  uri              :
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/dshuvar/"
+  github           : "dshuvar"
   google_plus      :
   keybase          :
   instagram        :
@@ -100,7 +100,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "@it_demi"
+  twitter          : "it_demi"
   vine             :
   weibo            :
   xing             :
