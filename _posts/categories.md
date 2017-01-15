@@ -3,6 +3,7 @@ layout: archive
 permalink: /categories/
 title: "Posts by Category"
 author_profile: true
+type: pages
 ---
 
 {% include group-by-array collection=site.posts field="categories" %}
