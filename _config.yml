@@ -80,7 +80,7 @@ author:
   name             : "Dmitry Shuvar"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "System Engineer"
-  location         : "Saint-Petersburg"
+  location         : "Russia, Saint-Petersburg"
   email            : "it.demi@ya.ru"
   uri              : 
   bitbucket        :
@@ -105,6 +105,8 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  test_tag             : https://dshuvar.github.io/blog/tags/
+  
 
 
 # Reading Files
