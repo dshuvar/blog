@@ -40,6 +40,7 @@ yum install puppet-server # На сервере (master)
 Однако мой опыт установки связан с тем, что т.к мне были нужны не самые свеживе версии, а програмное обеспечения версии 3.8.
 Замечу что на момент написания поста самой новой и стабильной версией является 4.8.
 Основная сложность заключается, что репозитории предлагаемом доментации эта версия отсутсвует, а на днях и вовсе была прекращена ее поддержка. Версия 3.8 была выбрана т.к эта версия все еще используется у нас на работе и много где еще, и в последствии иметь опыт обновления. Ниже прилагаю листинг действий для установки puppet'a на мастере(главный сервер):
+
 ```
 wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
 wget https://apt.puppetlabs.com/puppetlabs-release-pc1-precise.deb
@@ -51,7 +52,9 @@ apt-get purge puppetlabs-release-pc1
 apt-get install puppet 
 apt-get install puppetserver 
 ```
+
 вот что я в итоге получил:
+
 ```
 dpkg -l | grep puppet
 ii  facter                          2.4.6-1puppetlabs1                  Ruby module for collecting simple facts about a host operating system
@@ -62,7 +65,9 @@ ii  puppet-common                   3.8.7-1puppetlabs1                  Centrali
 ii  puppetlabs-release              1.1-1                               "Package to install Puppet Labs gpg key and apt repo"
 ii  puppetserver                    1.2.0-1puppetlabs1                  Puppet Labs puppetserver
 ```
+
 В случае если получили сообщение об ошибки вида:
+
 ```
 ~#apt-get install puppetserver
 Reading package lists... Done
@@ -84,6 +89,7 @@ puppetserver : Depends: puppet-common (>= 3.7.3-1puppetlabs1)
                
 E: Unable to correct problems, you have held broken packages.
 ```
+
 То следует начать с установки puppet, а уж потом установите puppetserver, это починит необходимые зависимости.
 
 Стоит заметить что puppetserver не тянет с собой в зависимостях клиентскую часть puppet-agent. Этот пакет как раз был установлен отдельно из репозитория который был впоследствиии удален.
@@ -95,11 +101,13 @@ E: Unable to correct problems, you have held broken packages.
 Первый запуск произошел весьма болезненно и завершился ничем. В логах как и ожидалось - ошибка, в которой говорится о том, что для запуска JVM недостаточно памяти.
 
 По умолчанию параметр указан как
+
 ```
 2016-09-04 15:57:00,968 ERROR [async-dispatch-2] [p.t.internal] Error during service init!!!
 
 java.lang.Error: Not enough available RAM (1,024MB) to safely accommodate the configured JVM heap size of {1}MB.  Puppet Server requires at least {2}MB of available RAM given this heap size, computed as 1.1 * max heap (-Xmx).  Either increase available memory or decrease the configured heap size by reducing the -Xms and -Xmx values in JAVA_ARGS in /etc/sysconfig/puppetserver on EL systems or /etc/default/puppetserver on Debian systems.
 ```
+
 Такое возможно решить двумя способами:
 
 1.Добавить памяти на сервер
@@ -126,6 +134,7 @@ java.lang.Error: Not enough available RAM (1,024MB) to safely accommodate the co
 
 ###Изменение конфига puppet
 Отредактировал /etc/puppet/puppet.conf добавив туда информация в блоках master и agent.
+
 ```
 [main]
 logdir=/var/log/puppet
@@ -149,12 +158,14 @@ certname = puppet.tw1.su
 server = puppet.tw1.su
 enviroment = production
 ```
+
 ###Указание связи имени хоста с адресом мастера
 Отредактировал /etc/hosts
 
 ###Подписывание сертификата
 
 Необходимо подписать сертификат на мастер-сервере.
+
 ```
                +------------------------+
                |                        |
@@ -171,6 +182,7 @@ enviroment = production
   |                 |                |                |
   +-----------------+                +----------------+
 ```
+
 Подписывается сертифкат командой:
 
 `puppet cert sign puppet.domain.com`
@@ -180,17 +192,21 @@ enviroment = production
 `puppet cert list -a`
 
 В случае если что то пошло не так, или например вы забыли указать в конфигурации альтернативные имена для сервера(как это сделал я), можете удалить сертификаты и переподписать по новой:
+
 ```
 find /var/lib/puppet -type f -print0 |xargs -0r rm
 puppet agent -t
 puppet cert list
 puppet cert sign puppet.tw1.su
 ```
+
 В целом после проделанных действий удалось запустить серверное приложение и запустить проверку конфигурации то вы на верном пути:
+
 ```
     /etc/init.d/puppetserver status
      * puppetserver is running
 ```
+
 ```
     puppet agent -t
     Info: Retrieving pluginfacts
