@@ -3,7 +3,7 @@ title: Введение в puppet
 date: {}
 categories: work
 tags: puppet
-published: false
+published: true
 ---
 ##Что такое puppet?
 [Puppet](https://puppet.com/) - система управления конфигурациями, состоящая из:
