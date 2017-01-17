@@ -19,4 +19,5 @@ published: false
     - [PuppetDB](https://docs.puppet.com/puppetdb/1/) - Хранилище данных puppet'a
 
 Источники информации:
+	- puppet.com
     - Tutorial By Alessandro Franceschi (11-07-2015)
