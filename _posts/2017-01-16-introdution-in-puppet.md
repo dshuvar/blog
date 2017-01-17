@@ -14,6 +14,9 @@ published: false
 
 Программное обеспечение связанное с puppet:
 	- Facter - 
+    - MCollective - 
+    - Hiera - 
+    - PuppetDB - 
 
 Источники информации:
     - Tutorial By Alessandro Franceschi (11-07-2015)
