@@ -124,6 +124,34 @@ E: Unable to correct problems, you have held broken packages.
 Сначал я указал временную зону при помощи конфига `/etc/timezone` выбрав необходимую из [списка](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 Позже я все же установил пакет tzdata
 
+###Изменение конфига puppet
+Отредактировал /etc/puppet/puppet.conf добавив туда информация в блоках master и agent.
+```
+[main]
+logdir=/var/log/puppet
+vardir=/var/lib/puppet
+ssldir=/var/lib/puppet/ssl
+rundir=/var/run/puppet
+factpath=$vardir/lib/facter
+#templatedir=$confdir/templates
+hiera_config=/etc/puppet/hiera.yaml
+
+[master]
+# These are needed when the puppetmaster is run by passenger
+# and can safely be removed if webrick is used.
+ssl_client_header = SSL_CLIENT_S_DN 
+ssl_client_verify_header = SSL_CLIENT_VERIFY
+
+dns_alt_names = puppet,puppet.tw1.su,puppetmaster,puppetmaster.tw1.su
+certname = puppet.tw1.su
+
+[agent]
+server = puppet.tw1.su
+enviroment = production
+```
+###Указание связи имени хоста с адресом мастера
+Отредактировал /etc/hosts
+
 ###Подписывание сертификата
 
 Необходимо подписать сертификат на мастер-сервере.
