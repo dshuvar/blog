@@ -96,9 +96,9 @@ E: Unable to correct problems, you have held broken packages.
 
 По умолчанию параметр указан как
 ```
-    2016-09-04 15:57:00,968 ERROR [async-dispatch-2] [p.t.internal] Error during service init!!!
+2016-09-04 15:57:00,968 ERROR [async-dispatch-2] [p.t.internal] Error during service init!!!
 
-    java.lang.Error: Not enough available RAM (1,024MB) to safely accommodate the configured JVM heap size of {1}MB.  Puppet Server requires at least {2}MB of available RAM given this heap size, computed as 1.1 * max heap (-Xmx).  Either increase available memory or decrease the configured heap size by reducing the -Xms and -Xmx values in JAVA_ARGS in /etc/sysconfig/puppetserver on EL systems or /etc/default/puppetserver on Debian systems.
+java.lang.Error: Not enough available RAM (1,024MB) to safely accommodate the configured JVM heap size of {1}MB.  Puppet Server requires at least {2}MB of available RAM given this heap size, computed as 1.1 * max heap (-Xmx).  Either increase available memory or decrease the configured heap size by reducing the -Xms and -Xmx values in JAVA_ARGS in /etc/sysconfig/puppetserver on EL systems or /etc/default/puppetserver on Debian systems.
 ```
 Такое возможно решить двумя способами:
 
