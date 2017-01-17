@@ -62,6 +62,66 @@ ii  puppet-common                   3.8.7-1puppetlabs1                  Centrali
 ii  puppetlabs-release              1.1-1                               "Package to install Puppet Labs gpg key and apt repo"
 ii  puppetserver                    1.2.0-1puppetlabs1                  Puppet Labs puppetserver
 ```
+В случае если получили сообщение об ошибки вида:
+```
+~#apt-get install puppetserver
+Reading package lists... Done
+Building dependency tree     
+Reading state information... Done
+    
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+
+The following information may help to resolve the situation:
+The following packages have unmet dependencies:
+
+puppetserver : Depends: puppet-common (>= 3.7.3-1puppetlabs1)
+               Depends: puppet-common (<= 4.0.0-1puppetlabs1)
+               Depends: puppet (>= 3.7.3-1puppetlabs1)
+               Depends: puppet (<= 4.0.0-1puppetlabs1)
+               
+E: Unable to correct problems, you have held broken packages.
+```
+То следует начать с установки puppet, а уж потом установите puppetserver, это починит необходимые зависимости.
+
+Стоит заметить что puppetserver не тянет с собой в зависимостях клиентскую часть puppet-agent. Этот пакет как раз был установлен отдельно из репозитория который был впоследствиии удален.
+
+Для установки клиенской части на отдельном хосте серверная часть не требуется. В целом установка быстра и легка.
+
+##Ошибки с которыми я столкнулся при запуске
+
+Первый запуск произошел весьма болезненно и завершился ничем. В логах как и ожидалось - ошибка, в которой говорится о том, что для запуска JVM недостаточно памяти.
+
+По умолчанию параметр указан как
+```
+    2016-09-04 15:57:00,968 ERROR [async-dispatch-2] [p.t.internal] Error during service init!!!
+
+    java.lang.Error: Not enough available RAM (1,024MB) to safely accommodate the configured JVM heap size of {1}MB.  Puppet Server requires at least {2}MB of available RAM given this heap size, computed as 1.1 * max heap (-Xmx).  Either increase available memory or decrease the configured heap size by reducing the -Xms and -Xmx values in JAVA_ARGS in /etc/sysconfig/puppetserver on EL systems or /etc/default/puppetserver on Debian systems.
+```
+Такое возможно решить двумя способами:
+
+1.Добавить памяти на сервер
+
+2.Или указать параметр `JAVA_ARGS="-Xms1g -Xmx1g"`  в конфиге `/etc/default/puppetserver`
+
+Согласно документации для запуска сервиса необходимо минимум 2гб озу.
+
+По умолчанию параметр указан как `JAVA_ARGS="-Xms2g -Xmx2g -XX:MaxPermSize=256m"`
+
+Второй запуск прошел без ошибок, что подтверждает статус init скрипта:
+
+```
+/etc/init.d/puppetserver status
+
+ * puppetserver is running
+```
+
+
+
+
+
 
 
 Источники информации:
