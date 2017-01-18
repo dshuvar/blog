@@ -181,7 +181,7 @@ enviroment = production
   | Master SSL Cert |                | Agent SSL Cert |
   |                 |                |                |
   +-----------------+                +----------------+
-```
+  ```
 
 Подписывается сертифкат командой:
 
@@ -203,19 +203,18 @@ puppet cert sign puppet.tw1.su
 В целом после проделанных действий удалось запустить серверное приложение и запустить проверку конфигурации то вы на верном пути:
 
 ```
-    /etc/init.d/puppetserver status
-     * puppetserver is running
+/etc/init.d/puppetserver status
+* puppetserver is running
 ```
 
 ```
-    puppet agent -t
-    Info: Retrieving pluginfacts
-    Info: Retrieving plugin
-    Info: Caching catalog for puppet.tw1.su
-    Info: Applying configuration version '1477261916'
-    Notice: Finished catalog run in 0.02 seconds
+puppet agent -t
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for puppet.tw1.su
+Info: Applying configuration version '1477261916'
+Notice: Finished catalog run in 0.02 seconds
 ```
-
 
 
 
