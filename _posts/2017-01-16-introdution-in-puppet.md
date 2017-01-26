@@ -112,7 +112,7 @@ java.lang.Error: Not enough available RAM (1,024MB) to safely accommodate the co
 
 1.Добавить памяти на сервер
 
-2.Или указать параметр `JAVA_ARGS="-Xms1g -Xmx1g"`  в конфиге `/etc/default/puppetserver`
+2.Или указать параметр `JAVA_ARGS="-Xms1g -Xmx1g -XX:MaxPermSize=256m"`  в конфиге `/etc/default/puppetserver`
 
 Согласно документации для запуска сервиса необходимо минимум 2гб озу.
 
