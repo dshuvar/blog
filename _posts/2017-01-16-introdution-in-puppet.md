@@ -49,6 +49,7 @@ dpkg -i puppetlabs-release--pc1precise.deb
 apt-get update 
 apt-get install puppet-agent
 apt-get purge puppetlabs-release-pc1
+apt-get update
 apt-get install puppet 
 apt-get install puppetserver 
 ```
