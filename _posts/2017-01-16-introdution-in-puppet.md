@@ -2,9 +2,9 @@
 title: Введение в puppet
 date: 2017-02-03 04:10:00 +0300
 categories: work
-tags: 
+tags:
   - puppet
-  - Memory Allocation
+  - Memory_Allocation
 published: true
 ---
 [Puppet](https://puppet.com/) - система управления конфигурациями, состоящая из:
