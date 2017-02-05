@@ -14,4 +14,5 @@ title: Puppet Resources
   - сервис, статус которого мы можем проверить;
   - файл, сожержимое которого мы можем передать на конечную ноду;
   
-  ![2017-02-05-for-puppet-resourses_1.png]({{site.baseurl}}/assets/screen/2017-02-05-for-puppet-resourses_1.png)
+![2017-02-05-for-puppet-resourses_1.png]({{site.baseurl}}/_posts/2017-02-05-for-puppet-resourses_1.png)
+
