@@ -1,5 +1,11 @@
 ---
 published: true
+categories: work
+tags:
+ - puppet
+date: '2017-02-06 00:47:00 +0300'
+title: Puppet Resources
+
 ---
 Эта статья  находится в разработке и должна быть основополагающей для понимания того как работает puppet.
 
