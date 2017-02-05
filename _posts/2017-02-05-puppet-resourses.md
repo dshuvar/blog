@@ -13,3 +13,5 @@ title: Puppet Resources
   - пакет, который должен быть установлен;
   - сервис, статус которого мы можем проверить;
   - файл, сожержимое которого мы можем передать на конечную ноду;
+  
+  ![2017-02-05-for-puppet-resourses_1.png]({{site.baseurl}}/assets/screen/2017-02-05-for-puppet-resourses_1.png)
