@@ -169,6 +169,7 @@ puppet cert sign puppet.tw1.su
 
 ```
 
+
 ```
 puppet agent -t
 Info: Retrieving pluginfacts
