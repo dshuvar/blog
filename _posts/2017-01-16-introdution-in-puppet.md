@@ -166,6 +166,7 @@ find /var/lib/puppet -type f -print0 |xargs -0r rm
 puppet agent -t
 puppet cert list
 puppet cert sign puppet.tw1.su
+
 ```
 
 ```
@@ -175,6 +176,7 @@ Info: Retrieving plugin
 Info: Caching catalog for puppet.tw1.su
 Info: Applying configuration version '1477261916'
 Notice: Finished catalog run in 0.02 seconds
+
 ```
 
 
