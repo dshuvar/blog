@@ -1,6 +1,6 @@
 ---
 title: Введение в puppet
-date: '2017-06-05 04:10:00 +0300'
+date: '2017-05-02 04:10:00 +0300'
 categories: work
 tags:
   - puppet
