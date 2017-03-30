@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+categories: work
+date: '2017-03-30 16:43:00 +0300'
 ---
 ## Post about yaml parse error
 
@@ -23,4 +25,4 @@ published: false
     innodb_buffer_pool_size: '60000M'
 ```
 
-Для поиска ошибок в yaml файлах я использовал [linter-js-yaml](https://github.com/AtomLinter/linter-js-yaml)
+Для поиска ошибок в yaml файлах я использовал плагин для редактора atom [linter-js-yaml](https://github.com/AtomLinter/linter-js-yaml)
