@@ -8,6 +8,7 @@ published: false
 Например в блоке кода параметр `init_connect` многострочный и в него необходимо добавить пробел:
 
 Было:
+
 ```
     init_connect:'SET NAMES utf8;set autocommit=1;'
     innodb_additional_mem_pool_size: '200M'
@@ -15,6 +16,7 @@ published: false
 ```
 
 Стало:
+
 ```
     init_connect: 'SET NAMES utf8;set autocommit=1;'
     innodb_additional_mem_pool_size: '200M'
