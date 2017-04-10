@@ -1,11 +1,11 @@
 ---
 title: sar
-published: True
+published: true
 date: '2017-04-10 04:11:00 +0300'
 tags: tools
 categories: work
 ---
-##Sar - system actiity report
+## Sar - system actiity report
 `sar` - утилита, распространаяющаяся с пакетом sysstat, собирающая информацию о системной активности.
 
 Благодаря отчетам сгенерированным утилитой `sar` можно много узнать о производительности вашей системы.
@@ -168,7 +168,7 @@ Average:          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     awai
 Average:       dev8-0      5,23     29,20    661,87    132,05      0,03      5,30      2,13      1,11
 ```
 
-##Sar history
+## Sar history
 
 Для просмотра статистики за какой либо из последующи дней необходимо принудительно указать утилите путь до файла с логами. Обычно для этого используется ключ `-f`.
 
