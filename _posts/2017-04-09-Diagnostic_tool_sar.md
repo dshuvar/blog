@@ -1,7 +1,9 @@
 ---
+title: sar
 published: True
-categories: work
 date: '2017-04-10 04:11:00 +0300'
+tags: tools
+categories: work
 ---
 ##Sar - system actiity report
 `sar` - утилита, распространаяющаяся с пакетом sysstat, собирающая информацию о системной активности.
