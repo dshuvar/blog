@@ -3,7 +3,7 @@ published: false
 categories: work
 date: '2017-03-30 16:43:00 +0300'
 ---
-###Sar - system actiity report
+##Sar - system actiity report
 `sar` - утилита, распространаяющаяся с пакетом sysstat, собирающая информацию о системной активности.
 
 Благодаря отчетам сгенерированным утилитой `sar` можно много узнать о производительности вашей системы.
@@ -25,7 +25,7 @@ sysstat version 11.3.5
 (C) Sebastien Godard (sysstat <at> orange.fr)
 ```
 
-Основной синтаксис утилиты таков:
+##Основной синтаксис утилиты таков:
 
 `sar -REPORT LEN CNT`
 
