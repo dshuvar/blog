@@ -17,8 +17,8 @@ repository               : "dshuvar/blog" # GitHub username/repo-name e.g. "mmis
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-comments:
-  provider               : true # "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+comments                 : true
+  provider               : "disqus" # "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus: 
     shortname            : "dshuvar-github-io-blog" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
