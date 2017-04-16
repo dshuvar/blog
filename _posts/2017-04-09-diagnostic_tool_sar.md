@@ -5,7 +5,7 @@ tags: tools
 categories: work
 date: '2017-04-10 04:11:00 +0300'
 ---
-## Sar - system actiity report
+## Sar - system activity report
 
 `sar` - утилита, распространаяющаяся с пакетом sysstat, собирающая информацию о системной активности.
 
