@@ -17,10 +17,10 @@ repository               : "dshuvar/blog" # GitHub username/repo-name e.g. "mmis
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-comments:
+comments: "true"
   provider               : "disqus" # "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus: "dshuvar-github-io-blog"
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  disqus: 
+    shortname            : "dshuvar-github-io-blog" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
