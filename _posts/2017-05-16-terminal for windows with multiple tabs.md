@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 categories: work
 tags: 'enviroment, terminal'
 date: '2017-03-30 16:43:00 +0300'
