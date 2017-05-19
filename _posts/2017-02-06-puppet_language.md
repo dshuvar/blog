@@ -71,5 +71,9 @@ file { '/etc/passwd':
 ```
 
 ```
-
+  file { '/var/www/test':
+    ensure => directory,
+    mode   => '0644',
+    path   => '/var/www/test',
+  }
 ```
