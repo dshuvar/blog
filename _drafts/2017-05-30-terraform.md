@@ -11,4 +11,4 @@ published: false
  - утилиты оркестрации и шаблонов(docker\packer\kubernetes\swarm\vagrant)
  - утилиты управления инфрастуктурой(terraform\cloudformation\openstack_heat)
 
-## Материал основывается на книге [Terraform: Up & Running](http://www.terraformupandrunning.com/?ref=ybrikman-home) автора [Yevgeniy Brikman](https://github.com/brikis98/)
+### Материал основывается на книге [Terraform: Up & Running](http://www.terraformupandrunning.com/?ref=ybrikman-home) автора [Yevgeniy Brikman](https://github.com/brikis98/)
