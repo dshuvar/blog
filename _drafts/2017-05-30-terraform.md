@@ -43,4 +43,4 @@ published: false
 
 
 
-### Материал основывается на книге [Terraform: Up & Running](http://www.terraformupandrunning.com/?ref=ybrikman-home) и [статье](https://www.oreilly.com/learning/why-use-terraform)  автора [Yevgeniy Brikman](https://github.com/brikis98/) 
+### Материал основывается на книге [Terraform: Up & Running](http://www.terraformupandrunning.com/?ref=ybrikman-home) и [статье](https://www.oreilly.com/learning/why-use-terraform)  автора [Yevgeniy Brikman](https://github.com/brikis98/) и является вольным переводом оных на русский язык.
