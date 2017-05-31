@@ -63,6 +63,23 @@ resource "aws_instance" "example" {
 
 
 
+## Ошибки с которыми столкнулся лично я при знакомстве с утилитой
+
+Ошибка определения shared_credentials_file 
+Обсуждение ошибки на github: https://github.com/hashicorp/terraform/issues/5610
+```
+$ ./terraform.exe plan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+Error running plan: 1 error(s) occurred:
+
+* provider.aws: No valid credential sources found for AWS Provider.
+  Please see https://terraform.io/docs/providers/aws/index.html for more information on
+  providing credentials for the AWS Provider
+```
+
 
 
 
