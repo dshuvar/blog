@@ -54,7 +54,7 @@ resource "aws_instance" "example" {
 - переменной _resource_ обозначается какой либо ресурс (Ваш К.О)
 - _"awsinstance"_ 	- провайдер ресурса
 - _"example"_ 		- имя ресурса
-- такие значения как _ami_ или _instancetype_ являются конфигурацией ресурса
+- такие переменные как _ami_ или _instancetype_ являются конфигурацией ресурса
 
 
 ## Установка terraform hashicorp
