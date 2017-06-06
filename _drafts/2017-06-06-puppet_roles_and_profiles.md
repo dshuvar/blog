@@ -34,5 +34,11 @@ published: false
 
 ### Зачем нужны роли и профайлы?
 
-Обьяснить зачем
+Если не спользовать роли 
+
+### Материалы:
+
+https://docs.puppet.com/pe/2017.2/r_n_p_intro.html
+
+https://www.udemy.com/introduction-to-puppet-roles-and-profiles/
 
