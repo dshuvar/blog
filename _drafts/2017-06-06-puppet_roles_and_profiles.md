@@ -36,9 +36,9 @@ published: false
 
 Если не спользовать роли 
 
+
 ### Материалы:
 
-https://docs.puppet.com/pe/2017.2/r_n_p_intro.html
+[docs.puppet.com](https://docs.puppet.com/pe/2017.2/r_n_p_intro.html)
 
-https://www.udemy.com/introduction-to-puppet-roles-and-profiles/
-
+[udemy.com](https://www.udemy.com/introduction-to-puppet-roles-and-profiles/)
