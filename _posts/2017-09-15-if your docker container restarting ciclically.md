@@ -1,5 +1,8 @@
 ---
 published: true
+categories: work
+tags: docker
+date: '2017-09-15 20:08:00 +0300'
 ---
 ## A New Friday pain Post
 
