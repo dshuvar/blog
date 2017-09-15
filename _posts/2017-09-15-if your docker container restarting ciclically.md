@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## A New Friday pain Post
 
@@ -31,6 +31,6 @@ time="2017-09-15T15:20:05Z" level=info msg="Starting my_favorite_container (vers
 
 ```
 
-I'm find data volumes in directory `/var/lib/docker/containers/ID_CONTAINER`
-And find my configuration file in `/var/docker-services/my_favorite_container/config/config.yml`
+I'm find data volumes in directory /var/lib/docker/containers/ID_CONTAINER
+And find my configuration file in /var/docker-services/my_favorite_container/config/config.yml
 And sure i made rigth changes in that times.
