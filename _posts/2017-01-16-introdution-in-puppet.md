@@ -5,7 +5,7 @@ categories: work
 tags:
   - puppet
   - Memory_Allocation
-published: true
+published: false
 ---
 [Puppet](https://puppet.com/) - система управления конфигурациями, состоящая из:
     - набора утилит для управления конфигураций
