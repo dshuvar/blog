@@ -4,10 +4,10 @@ categories: work
 tags: docker
 date: '2017-09-15 20:08:00 +0300'
 ---
-## A New Friday pain Post
+## A New Friday Post of pain.
 
 Hello.
-Today I has knows some litle pain about docker and improve self attitude to docker stack.
+Today I have learn lesson about some litle pain about docker and improve self attitude to docker stack.
 
 If you break your container for example make new change in config service and reload container after and   see status of then as infinitylly restarting: `Restarting (1) 5 seconds ago, ``Restarting (1) 42 seconds ago` and feel worry - first keep calm.
 
@@ -22,7 +22,7 @@ sudo docker restart my_favorite_container
 But something was wrong.
 Opps, i made mistake in my configutration file and now my container restarts again and again.
 
-I can saw it in log-files:
+You can saw it in log-files:
 
 ```
 sudo docker logs --tail 5 my_favorite_container
@@ -36,4 +36,4 @@ time="2017-09-15T15:20:05Z" level=info msg="Starting my_favorite_container (vers
 
 I'm find data volumes in directory /var/lib/docker/containers/ID_CONTAINER
 And find my configuration file in /var/docker-services/my_favorite_container/config/config.yml
-And sure i made rigth changes in that times.
+And sure I made rigth changes in that times.
