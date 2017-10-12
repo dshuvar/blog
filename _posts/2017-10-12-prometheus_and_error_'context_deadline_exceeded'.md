@@ -21,3 +21,12 @@ global:
   evaluation_interval: 10s
   scrape_timeout: 10s
 ```
+
+Values defines for:
+
+scrape_interval - how frequently to scrape targets from this job.
+
+evaluation_interval - how frequently to evaluate rules.
+
+scrape_timeout - per-scrape timeout when scraping this job.
+
