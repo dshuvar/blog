@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## It note for people who were been surprised falling down monitoring system.
 
@@ -21,9 +21,3 @@ global:
   evaluation_interval: 10s
   scrape_timeout: 10s
 ```
-
-
-
-
-
-
