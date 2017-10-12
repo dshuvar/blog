@@ -7,10 +7,11 @@ If you see state "down" and error "context deadline exceeded" for all you endpoi
 
 Try do next: 
 
-1.increase value in settings for:
-- scrape_interval
-- evaluation_interval
-- scrape_timeout
+1. increase value in settings for:
+  - scrape_interval
+  - evaluation_interval
+  - scrape_timeout
+  
 2. and reload your app.
 
 
