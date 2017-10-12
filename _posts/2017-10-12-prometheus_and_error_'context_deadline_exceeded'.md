@@ -5,13 +5,12 @@ published: true
 
 If you see state "down" and error "context deadline exceeded" for all you endpoints on target page your prometheus.
 
-Try do next: 
+Try do next for solved this problem: 
 
-1. increase value in settings for:
-  - scrape_interval
-  - evaluation_interval
-  - scrape_timeout
-  
+1.increase value in settings:
+- scrape_interval
+- evaluation_interval
+- scrape_timeout
 2. and reload your app.
 
 
@@ -34,4 +33,3 @@ scrape_interval - how frequently to scrape targets from this job.
 evaluation_interval - how frequently to evaluate rules.
 
 scrape_timeout - per-scrape timeout when scraping this job.
-
