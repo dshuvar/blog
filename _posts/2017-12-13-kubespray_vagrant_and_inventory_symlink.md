@@ -4,7 +4,7 @@ tag: work
 tags: work
 categories: work
 ---
-Last days I saw strange mistake when tryed up nodes by vagrant use kubespray.
+Last days I saw strange mistake in cygwin-like console when tryed up nodes by vagrant use kubespray.
 After rethinking what that means I understud, it means need symlink between files.
 it so stupid.
 
