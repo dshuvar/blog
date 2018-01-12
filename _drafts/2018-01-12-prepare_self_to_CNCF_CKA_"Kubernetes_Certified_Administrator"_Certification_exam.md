@@ -1,0 +1,6 @@
+---
+published: false
+---
+## How I prepare self to CNCF CKA "Kubernetes Certified Administrator" Certification exam.
+
+Its realy fucking difficult for me, but I will try notes the general points below.
