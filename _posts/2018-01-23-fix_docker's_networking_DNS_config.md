@@ -21,7 +21,7 @@ the second mistake looks full like that:
 Retrying (Retry(total=4, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<pip._vendor.requests.packages.urllib3.connection.VerifiedHTTPSConnection object at  Failed to establish a new connection: [Errno -2] Name or service not known',)': /simple/django/
 ```
 
-and after day serach for solution I finded it by [@nottrobin](https://twitter.com/nottrobin) at link https://development.robinwinslow.uk/2016/06/23/fix-docker-networking-dns/
+and after day serach for solution I finded it by [@nottrobin](https://twitter.com/nottrobin) at link [https://development.robinwinslow.uk/2016/06/23/fix-docker-networking-dns/](https://development.robinwinslow.uk/2016/06/23/fix-docker-networking-dns/)
 
 ## just in case I made copy article bellow:
 
