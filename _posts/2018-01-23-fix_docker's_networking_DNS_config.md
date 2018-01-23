@@ -1,5 +1,8 @@
 ---
 published: true
+categories: work
+tags: docker
+date: '2018-01-23 15:00:00 +0300'
 ---
 ## Fix Docker's networking DNS config
 
@@ -121,5 +124,3 @@ Name:      google.com
 Address 1: 2a00:1450:4009:811::200e lhr26s02-in-x200e.1e100.net
 Address 2: 216.58.198.174 lhr25s10-in-f14.1e100.net
 ```
-
-
